@@ -1,5 +1,9 @@
 # Landslide-Prevention-and-Innovation
-==============================
+
+<p align="center">
+    <img width="400" src=reports/figures/Landslideimage.PNG alt="Land slide">
+</p>
+
 
 ## Brief Description: 
 
@@ -49,7 +53,7 @@ The common practice of identifying landslides is visual interpretation which, ho
 **Rank : 1/173**  
 
 <p align="center">
-    <img width="400" src=reports/figures/leaderboard/leaderboard.PNG alt="MRI Classification">
+    <img width="400" src=reports/figures/leaderboard.PNG alt="Leaderboard">
 </p>
 
 
