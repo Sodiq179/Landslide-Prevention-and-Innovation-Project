@@ -17,36 +17,41 @@ The common practice of identifying landslides is visual interpretation which, ho
     ├── LICENSE
     ├── README.md        
     ├── data
-    │   ├── processed      
-    │   └── raw            
-    │
-    ├── models             
-    │
-    ├── notebooks          
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   
-    │
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
+    │   ├── raw
+    │   │   ├── Test.csv               <- Downloaded test data from Zindi
+    │   │   ├── Train.csv              <- Downloaded train data from Zindi
+    │   │   └── SampleSubmission.csv   <- Downloaded submission data from Zindi
+    │   ├── processed
+    │   │   ├── new_test.csv          <- Generated test data [after running src/build_features.py]
+    │   │   └── new_train.csv         <- Generated train data [after running src/build_features.py]
+    │   └── output
+    │       └── Submission.csv        <- Generated submission data [after running src/train_model.py and src/predict_model.py]
+    ├── models                        <- Contains the saved XGBoost, CatBoost and LightBoost
+    ├── notebooks
+    │   ├── Analysis_notebook.ipynb               <- Analysis Notebook
+    │   ├── scripts_runner_notebook.ipynb         <- Notebook for running the scripts (using GPU) 
+    │   └── complete_model_implementation.ipynb   <- Notebook for complete implementation of the project (From EDA to submission) 
+    ├── reports            
+    │   └── figures      <- Generated graphics and figures [after running src/visualize.py]
+    ├── requirements.txt        <- Requirements text file
+    ├── src                     <- Source code for use in this project.
+    │   ├── __init__.py         <- Makes src a Python module
+    │   ├── build_features.py   <- Script for feature engineering.
+    │   ├── predict_model.py    <- Script to mske prediction snd creste thr submission file.
+    │   ├── train_model.py      <- Script to train the models (XGBoost, CatBoost and LGBoost).
+    │   └── visualize.py        <- Script to generate the analysis graphics.
     └── models 
+
+### How to run the codes
+
+### Step-1: 
+
+**🍴 Fork the repository**
+
+```bash
+git clone https://github.com/YOUR-USERNAME/course
+```
+
 
 ## [Rank on the Leaderboard](https://zindi.africa/competitions/landslide-prevention-and-innovation-challenge/leaderboard)
 
@@ -61,9 +66,9 @@ The common practice of identifying landslides is visual interpretation which, ho
 
 <div align='center'>
 
-| Name           |                     Zindi ID                     |                  Github ID                              |
-|----------------|--------------------------------------------------|---------------------------------------------------------|
-|Sodiq Babawale |[@Babawale_Sodiq](https://zindi.africa/users/Babawale_sodiq)      |[@Sodiq179](https://github.com/Sodiq179)        |
+| Name           |                     Zindi ID                     |
+|----------------|--------------------------------------------------|
+|Sodiq Babawale |[@Babawale_Sodiq](https://zindi.africa/users/Babawale_sodiq)|
 
 
 </div>
