@@ -1,7 +1,7 @@
 # Landslide-Prevention-and-Innovation
 
 <p align="center">
-    <img width="400" src=reports/figures/Landslideimage.png alt="Land slide">
+    <img width="600" src=reports/figures/Landslideimage.png alt="Land slide">
 </p>
 
 
@@ -51,7 +51,7 @@ Download the `scripts_runner_notebook.ipynb` [here](notebooks/scripts_runner_not
 ### Step 2: Enable GPU on colaboratory
 
 <p align="center">
-    <img width="200" src=reports/figures/colab_gpu_activator.PNG alt="Activate GPU">
+    <img width="400" src=reports/figures/colab_gpu_activator.PNG alt="Activate GPU">
 </p>
 
 ### Step 2: SETUP
@@ -64,7 +64,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 ```
 
-**Change working directory to your google drive**
+**Change working directory to your Google drive**
 
 ```bash
 %cd drive/MyDrive
