@@ -88,6 +88,12 @@ drive.mount('/content/drive')
 !pip install -r requirement.txt
 ```
 
+### Step 3: Download Dataset
+
+Download the `Train.csv` and `Test.csv` [here](https://zindi.africa/competitions/landslide-prevention-and-innovation-challenge/data) and upload it to the `data/raw` folder in your drive.
+
+### Step 4: Run the following scripts in the notebook
+
 **Run the `visualize.py` script to create necessary visualizations**
 ```bash
 !python src/visualize.py
