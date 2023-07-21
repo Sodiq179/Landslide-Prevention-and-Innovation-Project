@@ -1,7 +1,7 @@
 # Landslide-Prevention-and-Innovation
 
 <p align="center">
-    <img width="600" src=reports/figures/Landslideimage.png alt="Land slide">
+    <img width="900" src=reports/figures/Landslideimage.png alt="Land slide">
 </p>
 
 
