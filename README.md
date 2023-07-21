@@ -1,7 +1,7 @@
 # Landslide-Prevention-and-Innovation
 
 <p align="center">
-    <img width="400" src=reports/figures/Landslideimage.PNG alt="Land slide">
+    <img width="400" src=reports/figures/Landslideimage.png alt="Land slide">
 </p>
 
 
@@ -44,12 +44,68 @@ The common practice of identifying landslides is visual interpretation which, ho
 
 ### How to run the codes
 
-### Step-1: 
+### Step 1: Donwload Script Runner Notebook
 
-**🍴 Fork the repository**
+Download the `scripts_runner_notebook.ipynb` [here](notebooks/scripts_runner_notebook.ipynb) and upload it to your google colab.
+
+### Step 2: Enable GPU on colaboratory
+
+<p align="center">
+    <img width="200" src=reports/figures/colab_gpu_activator.PNG alt="Activate GPU">
+</p>
+
+### Step 2: SETUP
+**Setup by running the following codes in the `scripts_runner_notebook.ipynb` notebook**
+
+**Connect colab to your google drive**
+
+```python
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+**Change working directory to your google drive**
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/course
+%cd drive/MyDrive
+```
+
+**Fork the repository 🍴**
+
+```bash
+!git clone https://github.com/Sodiq179/Landslide-Prevention-and-Innovation-Project
+```
+
+**Change working directory to the project folder**
+
+```bash
+%cd "Landslide-Prevention-and-Innovation-Project"
+```
+
+**Install `requirement.txt` packages**
+```bash
+%%capture
+!pip install -r requirement.txt
+```
+
+**Run the `visualize.py` script to create necessary visualizations**
+```bash
+!python src/visualize.py
+```
+
+**Run the `build_features.py` script to create new features**
+```bash
+!python src/build_features.py
+```
+
+**Run the `train_model.py` script to train the models**
+```bash
+!python src/train_model.py
+```
+
+**Run the `predict_model.py` script to make predictions**
+```bash
+!python src/predict_model.py
 ```
 
 
