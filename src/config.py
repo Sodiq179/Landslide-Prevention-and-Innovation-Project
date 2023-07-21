@@ -20,7 +20,7 @@ class CFG:
                 "eval_metric" : 'F1',
                 'loss_function':'Logloss',
                 'random_seed':SEED,
-                "scale_pos_weight":3.8,
+                "scale_pos_weight":4,
                 'metric_period':500,
                 'od_wait':500,
                 'task_type':'GPU',
